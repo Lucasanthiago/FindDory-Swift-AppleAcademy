@@ -14,6 +14,12 @@
 		76D77B762C3724CC008714F8 /* FindDoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D77B752C3724CC008714F8 /* FindDoryTests.swift */; };
 		76D77B802C3724CC008714F8 /* FindDoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D77B7F2C3724CC008714F8 /* FindDoryUITests.swift */; };
 		76D77B822C3724CC008714F8 /* FindDoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D77B812C3724CC008714F8 /* FindDoryUITestsLaunchTests.swift */; };
+		76D77B8F2C372584008714F8 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D77B8E2C372584008714F8 /* ColorModel.swift */; };
+		76D77B922C3725B0008714F8 /* ContactsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D77B912C3725B0008714F8 /* ContactsListView.swift */; };
+		76D77B942C3725C3008714F8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D77B932C3725C3008714F8 /* MapView.swift */; };
+		76D77B962C3725D8008714F8 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D77B952C3725D8008714F8 /* ChatView.swift */; };
+		76D77B982C3725EB008714F8 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D77B972C3725EB008714F8 /* TextView.swift */; };
+		76D77B9B2C37367A008714F8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D77B9A2C37367A008714F8 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		76D77B7B2C3724CC008714F8 /* FindDoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindDoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D77B7F2C3724CC008714F8 /* FindDoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDoryUITests.swift; sourceTree = "<group>"; };
 		76D77B812C3724CC008714F8 /* FindDoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		76D77B8E2C372584008714F8 /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
+		76D77B912C3725B0008714F8 /* ContactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListView.swift; sourceTree = "<group>"; };
+		76D77B932C3725C3008714F8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		76D77B952C3725D8008714F8 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		76D77B972C3725EB008714F8 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		76D77B9A2C37367A008714F8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76D77B9B2C37367A008714F8 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,7 @@
 				76D77B742C3724CC008714F8 /* FindDoryTests */,
 				76D77B7E2C3724CC008714F8 /* FindDoryUITests */,
 				76D77B622C3724CB008714F8 /* Products */,
+				76D77B992C373679008714F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				76D77B642C3724CB008714F8 /* FindDoryApp.swift */,
-				76D77B662C3724CB008714F8 /* ContentView.swift */,
+				76D77B8E2C372584008714F8 /* ColorModel.swift */,
+				76D77B902C37258A008714F8 /* Views */,
 				76D77B682C3724CC008714F8 /* Assets.xcassets */,
 				76D77B6A2C3724CC008714F8 /* Preview Content */,
 			);
@@ -125,6 +140,26 @@
 				76D77B812C3724CC008714F8 /* FindDoryUITestsLaunchTests.swift */,
 			);
 			path = FindDoryUITests;
+			sourceTree = "<group>";
+		};
+		76D77B902C37258A008714F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76D77B662C3724CB008714F8 /* ContentView.swift */,
+				76D77B912C3725B0008714F8 /* ContactsListView.swift */,
+				76D77B932C3725C3008714F8 /* MapView.swift */,
+				76D77B952C3725D8008714F8 /* ChatView.swift */,
+				76D77B972C3725EB008714F8 /* TextView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		76D77B992C373679008714F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76D77B9A2C37367A008714F8 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +294,11 @@
 			files = (
 				76D77B672C3724CB008714F8 /* ContentView.swift in Sources */,
 				76D77B652C3724CB008714F8 /* FindDoryApp.swift in Sources */,
+				76D77B942C3725C3008714F8 /* MapView.swift in Sources */,
+				76D77B982C3725EB008714F8 /* TextView.swift in Sources */,
+				76D77B8F2C372584008714F8 /* ColorModel.swift in Sources */,
+				76D77B962C3725D8008714F8 /* ChatView.swift in Sources */,
+				76D77B922C3725B0008714F8 /* ContactsListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +465,8 @@
 				DEVELOPMENT_TEAM = ZZNV374RLA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Permitir uso do gps?";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Permitir uso do gps?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +496,8 @@
 				DEVELOPMENT_TEAM = ZZNV374RLA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Permitir uso do gps?";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Permitir uso do gps?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
